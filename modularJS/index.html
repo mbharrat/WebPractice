@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<title>ModularJS</title>
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+	<body>
+		<div class="hero-unit">
+			<h1>Modular<br/>JavaScript</h1>
+		</div>
+
+		<div id="peopleModule">
+			<h1>People</h1>
+			<input placeholder="name" type="text">
+			<button id="addPerson">Add Person</button>
+			<ul id="people">
+				<!-- people template -->
+				<script id="people-template" type="text/template">
+					{{#people}}
+					<li>
+						<span>{{.}}</span>
+						<i class="del">X</i>
+					</li>
+					{{/people}}
+				</script>
+			</ul>
+
+		</div>
+		<script src="scripts/jquery-3.2.1.js"></script>
+		<script src="scripts/mustache.js"></script>
+		<script src="scripts/modularJS.js"></script>
+
+		<!-- template -->
+			
+		</script>
+	</body>
+</html>
